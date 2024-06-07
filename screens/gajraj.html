@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.buttons h2{
+    display:inline;
+    background-color: rgb(227, 216, 102);
+    color:aliceblue;
+    height: 40px;
+    width: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding:15px;
+    }
+.contact h2{
+    display:inline;
+    background-color: rgb(46, 101, 168);
+    color:aliceblue;
+    height: 40px;
+    width: 140px;
+    padding: 20px;
+    }
+.contact{
+    margin-top: 70px;
+    text-align: center;
+    
+}
+.buttons{
+    text-align: center;
+}
+a:hover{
+    transition:transform .3s;
+    transform:scale(1.1);
+}
+.swiper-container {
+    height: 10;
+    width: 10;
+    margin: auto;
+    size-adjust: auto;
+    margin-bottom: 50px;
+    }
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    }
+.swiper-slide img {
+    width: 30%;
+    height: 10%;
+    }
+h3{
+    font-family: 'Segoe UI';
+    font-weight: 200;
+    background-color: rgb(231, 226, 226);
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <h3>
+        Gajraj : The Painting consist of an Elephant with decorated cloth in Rajasthani art and a Singhasan on it , with the outlay of Indian window or a Rajasthani Khidki Art  
+    </h3>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/gaj_raj.png" alt="Image 1" width="80"></div>
+            <div class="swiper-slide"><img src="/images/measure.png" alt="Image 2" width="10%"></div>
+            <div class="swiper-slide"><img src="/images/Study_table.jpg" alt="Image 3" width="10%"></div>
+            <div class="swiper-slide"><img src="/images/onWall.jpg" alt="Image 3" width="10%"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</div>
+<div class="buttons">
+    <h2>
+        <a href="#" id="alertLink">
+        Buy Now
+    </a>
+    <script>
+        document.getElementById('alertLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+            alert('The Purchase is not available yet! , Contact the owner manually ');
+        });
+    </script>
+    </h2>
+    <h2>
+        Add To Cart
+    </h2>
+</div>
+<div  class="contact" >
+<h2>
+  <a href="contact.html" >Contact me</a>
+</h2>
+</div>
+</body>
+</html>
